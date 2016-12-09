@@ -1,3 +1,5 @@
-import Foo from './Foo'
+import { render } from 'react-dom'
 
-Foo.speak()
+import App from './App'
+
+render(<App />, document.getElementById('app'))
