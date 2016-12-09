@@ -4,7 +4,9 @@ module.exports = {
   entry: config.entry,
   module: {
     loaders: [
-      config.loaders.js
+      config.loaders.image,
+      config.loaders.js,
+      config.loaders.sass
     ]
   },
   output: config.output.dev
