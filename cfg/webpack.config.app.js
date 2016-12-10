@@ -9,5 +9,7 @@ module.exports = {
       config.loaders.sass
     ]
   },
-  output: config.output.app
+  output: config.output.app,
+  resolve: config.resolve,
+  target: config.target
 }
