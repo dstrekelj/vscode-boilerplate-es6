@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "dev:build": "webpack --config cfg/webpack.config.dev.js --display-error-details",
+    "dev:serve": "webpack-dev-server --hot --content-base ./dev/",
     "dev:watch": "webpack --config cfg/webpack.config.dev.js --watch --display-error-details",
     "app:build": "webpack --config cfg/webpack.config.app.js --p --progress"
   },
@@ -24,7 +25,8 @@
     "resolve-url-loader": "^1.6.1",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
-    "webpack": "^1.14.0"
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
     "react": "^15.4.1",
