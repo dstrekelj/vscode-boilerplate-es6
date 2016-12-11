@@ -7,6 +7,10 @@ function query(loader, parameters) {
 }
 
 module.exports = {
+  devServer: {
+    contentBase: path.join(BASE, 'dev'),
+    inline: true,
+  },
   entry: path.join(BASE, 'src', 'index.js'),
   loaders: {
     image: {
@@ -37,7 +41,8 @@ module.exports = {
         {
           presets: [ 'es2015', 'react' ],
         }
-      )
+      ),
+      include: path.join(BASE, 'src'),
     },
     sass: {
       test: /\.scss$/i,

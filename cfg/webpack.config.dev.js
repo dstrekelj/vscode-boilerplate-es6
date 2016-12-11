@@ -1,6 +1,7 @@
 var config = require('./webpack.config')
 
 module.exports = {
+  devServer: config.devServer,
   entry: config.entry,
   module: {
     loaders: [

@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "dev:build": "webpack --config cfg/webpack.config.dev.js --display-error-details",
-    "dev:serve": "webpack-dev-server --hot --content-base ./dev/",
+    "dev:serve": "webpack-dev-server --config cfg/webpack.config.dev.js",
     "dev:watch": "webpack --config cfg/webpack.config.dev.js --watch --display-error-details",
     "app:build": "webpack --config cfg/webpack.config.app.js --p --progress"
   },
