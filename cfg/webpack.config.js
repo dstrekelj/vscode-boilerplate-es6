@@ -39,7 +39,7 @@ module.exports = {
       loader: query(
         'babel-loader',
         {
-          presets: [ 'es2015', 'react' ],
+          presets: [ 'es2015', 'react', 'stage-0' ],
         }
       ),
       include: path.join(BASE, 'src'),
