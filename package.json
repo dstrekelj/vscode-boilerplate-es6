@@ -4,10 +4,11 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
+    "app:build": "webpack --config cfg/webpack.config.app.js --p --progress",
     "dev:build": "webpack --config cfg/webpack.config.dev.js --display-error-details",
     "dev:serve": "webpack-dev-server --config cfg/webpack.config.dev.js",
     "dev:watch": "webpack --config cfg/webpack.config.dev.js --watch --display-error-details",
-    "app:build": "webpack --config cfg/webpack.config.app.js --p --progress"
+    "doc:build": "jsdoc -c cfg/jsdoc.config.json"
   },
   "keywords": [],
   "author": "dstrekelj <domagojstrekelj@gmail.com>",
@@ -19,10 +20,12 @@
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
     "css-loader": "^0.26.1",
+    "docdash": "^0.4.0",
     "eslint": "^3.11.1",
     "eslint-plugin-react": "^6.8.0",
     "file-loader": "^0.9.0",
     "image-webpack-loader": "^3.0.0",
+    "jsdoc": "^3.4.3",
     "node-sass": "^3.13.0",
     "resolve-url-loader": "^1.6.1",
     "sass-loader": "^4.0.2",
