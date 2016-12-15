@@ -1,5 +1,15 @@
+/**
+ * @fileoverview List component.
+ * @module app/components/list
+ * @requires react
+ */
+
 import React from 'react'
 
+/**
+ * @class
+ * @extends React.Component
+ */
 function ListItem({ task, onRemoveTask }) {
   return (
     <li onClick={() => { onRemoveTask(task) }}>
@@ -8,6 +18,10 @@ function ListItem({ task, onRemoveTask }) {
   )
 }
 
+/**
+ * @class List
+ * @extends React.Component
+ */
 export default ({ taskArray, onRemoveTask }) => (
   <ul>
     {taskArray.map(

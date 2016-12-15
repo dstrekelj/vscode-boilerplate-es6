@@ -1,3 +1,8 @@
+/**
+ * @fileoverview Application state reducer.
+ * @module app/reducers/app
+ */
+
 export const actions = {
   ADD_TASK: 'ADD_TASK',
   REMOVE_TASK: 'REMOVE_TASK'
